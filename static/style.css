@@ -1,0 +1,45 @@
+/* Custom Styles for a clean, modern look */
+
+body.bg-light-gradient {
+    /* A smooth, professional blue gradient background */
+    background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* Custom Alert for Orange/Moderate Risk (Bootstrap doesn't have an alert-orange natively) */
+.alert-orange {
+    color: #9c4b00;
+    background-color: #ffe8d1;
+    border-color: #ffc285;
+}
+
+/* Make inputs look a bit softer */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(43, 88, 118, 0.25);
+    border-color: #2b5876;
+}
+
+.btn-primary {
+    background-color: #2b5876;
+    border-color: #2b5876;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1e3f55;
+    border-color: #1e3f55;
+}
