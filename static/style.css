@@ -1,7 +1,5 @@
-/* Custom Styles for a clean, modern look */
 
 body.bg-light-gradient {
-    /* A smooth, professional blue gradient background */
     background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
     min-height: 100vh;
 }
@@ -14,14 +12,12 @@ body.bg-light-gradient {
     letter-spacing: 2px;
 }
 
-/* Custom Alert for Orange/Moderate Risk (Bootstrap doesn't have an alert-orange natively) */
 .alert-orange {
     color: #9c4b00;
     background-color: #ffe8d1;
     border-color: #ffc285;
 }
 
-/* Make inputs look a bit softer */
 .form-control, .form-select {
     border-radius: 8px;
     padding: 10px 15px;
