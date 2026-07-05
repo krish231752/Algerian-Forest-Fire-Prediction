@@ -1,4 +1,11 @@
-# 🔥 Algerian Forest Fire Prediction using Machine Learning
+# 🔥 Algerian Forest Fire Prediction
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-3.0-black?logo=flask)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.4-orange?logo=scikitlearn)
+![Render](https://img.shields.io/badge/Deployment-Render-46E3B7?logo=render)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-red)
+![Status](https://img.shields.io/badge/Project-Live-success)
 
 A Machine Learning-powered web application that predicts the **Fire Weather Index (FWI)** using meteorological data from the Algerian Forest Fires dataset. The application is built with **Flask** and deployed online for real-time predictions.
 
@@ -10,11 +17,16 @@ Forest fires are one of the most destructive natural disasters. Predicting fire 
 
 This application uses a **Ridge Regression** model trained on the **Algerian Forest Fires Dataset** to estimate the **Fire Weather Index (FWI)** based on weather conditions.
 
-The predicted FWI is further classified into different fire risk levels:
-- 🟢 Very Low Risk
-- 🟡 Low Risk
-- 🟠 Moderate Risk
-- 🔴 High Risk
+##  What is Fire Weather Index (FWI)?
+
+The Fire Weather Index (FWI) is a numerical indicator used to estimate the potential intensity and spread of forest fires based on weather conditions. Higher FWI values indicate more favorable conditions for wildfire ignition and rapid spread.
+
+| FWI Range    | Risk Level       |
+| ------------ | ---------------- |
+| **0 – 5**    | 🟢 Very Low Risk |
+| **5 – 15**   | 🟡 Low Risk      |
+| **15 – 30**  | 🟠 Moderate Risk |
+| **Above 30** | 🔴 High Risk     |
 
 ## 🚀 **Features**
 
@@ -51,7 +63,7 @@ The predicted FWI is further classified into different fire risk levels:
 | **DMC**                    | Indicates the moisture level of decomposed organic matter on the forest floor.    |
 | **ISI**                    | Estimates how quickly a fire is likely to spread after ignition.                  |
 | **Classes**                | Represents whether fire conditions were observed (`1 = Fire`, `0 = No Fire`).     |
-
+Note: These features are preprocessed using StandardScaler before being passed to the trained Ridge Regression model, which predicts the Fire Weather Index (FWI).
 ## 📈 Output
 
 The application predicts the **Fire Weather Index (FWI)** and categorizes the wildfire risk.
